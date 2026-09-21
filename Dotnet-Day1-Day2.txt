@@ -1,0 +1,726 @@
+Microsoft .Net
+
+	Multiple languages.
+	C#	and VB.Net(Visual Basic .Net)		====> Web application 
+	VC++ and F# 
+
+.Net Framework
+	
+It is a SDK (Software Development Kit)
+	
+	It must be installed in local system which helps to develop and run any .net applications written using any .net supported language(C# or VB.Net)	
+
+	.Net Framework 			.Net Core					.Net SDK 
+	Windows				Windows,Linux and MacOS		Windows,Linux and MacOS
+
+	CLR(Common Lanuguage Runtime)
+	
+		Execution engine which executes any .Net program written using .net supported language.
+	
+	.Net Framework Components
+	
+	CLR
+		Common Language Runtime
+		Execution engine which executes source code written using any .net supported language(c# or vb.net or vc++)
+
+	.Net Framework Base Class Library (.Net BCL or FCL)
+			Provides set of components and functionalities needed to develop any .net application.
+
+	Assembly 
+		Deploymental unit of execution.
+
+		.Exe (Executable file )  or .DLL (Dynamic Link Library)
+
+		DLL
+		Code sharing 
+		It helps to dynamically access source code(set of functionalities)  across different applications.
+
+		CMS(Customer Mgt System)						PMS(product mgt system)
+
+		Save()		Update()	GetDetails()				Save()		Update()	GetDetails()
+
+		DbFunctions.DLL									DbFunctions.DLL
+
+		C# Code												VB.Net 
+
+		Possible 
+			Language Interoperability
+			Source code written using one progrmming languagecan used in other programming language.
+										     .net supported							.net supported
+
+
+		CTS (Common Type System or Specification)
+
+			It defines unique set of data types with uniform size in all dotnet supported languages.
+
+		Source Code Execution
+
+		C#	(program1.cs)						Vb.Net  (Program1.vb)
+		
+							Compliation Stage
+		C#  Compiler							Vb Compiler
+
+		MSIL	or IL								MSIL
+
+		Microsoft Intermediate Language (Set of instructions understood by underlying hardware or platform)
+
+							Runtime Environment  (CLR)
+
+		.Exe									.Exe
+
+		
+		CLR components
+
+		JIT Compiler
+			MSIL to .exe file
+		
+		Thread management 		Exception Handler 			GC(Garbage Collector)
+
+		Assembly 
+				Private assembly 						or  			public or shared assembly 
+
+				assembly Used by single application					Assembly can be used by multiple applications 
+
+		Difference between .Net Framework 	and .Net Core 
+
+	Method with Parameters
+	------------------------------------------
+		When ????
+	
+		Send data from Front-End to Back-End .
+
+	Program.cs (Front-End)					Employee.cs    (Back-End Code)					-----> DB 
+	Html or View							data access logic (insert)						EmployeeTable 
+											GetEmployeeDetails(Employee emp)
+
+	Method with Retun Type 
+	====================
+	
+		Send data from Back-End to Front-End 
+
+	Program.cs (Front-End)					Employee.cs    (Back-End Code)					-----> DB 
+	Html or View							data access logic(select)						EmployeeTable (9 rows)
+
+											public Employee[] PrintEmployeeDetails()
+	for loop									{
+													//data access logic(select)	
+													return empArrayName;
+											}
+
+											Method signature
+
+	Method with Parameter and Return Type 
+	-------------------------------------------------------------------
+		When ????
+
+										Particular Employee Detail 
+	
+										public Employee PrintEmployeeDetails(int empId)
+										{
+												I/P ----> EmpId 		O/P ----> 1 Employee Object
+										}
+
+						
+										public string DeleteEmployeeById(int empId)
+										{
+
+										}
+Value Type 				Reference Type
+
+Value Types
+		Value types directly contain their data
+		Stored on stack memory location
+		-------------------------------------------------------
+		Example 
+		Primitive data types (int , char, float,double , long ,decimal,bool), Struct , Enum, Nullable , Tuple
+	
+		similar Call by Value
+		If we pass any value type as a parameter to any method, 
+		Changes done inside method , does not reflect back calling method(Main method)
+		
+
+	Reference Types
+		Reference types store a reference to their data.
+		Stored on Heap memory location
+		-------------------------------------------------------
+		Example
+		Class . Object , Array , string, interface, dynamic,delegate 
+		
+		similar Call by Reference
+		If we pass any reference type as a parameter to any methods, 
+		Changes done inside method , reflect back calling method(Main method)
+
+		Default value NULL
+	
+	Type Conversion
+	
+		Store one data type value into other data type 
+
+		Implicit
+			We store smaller data type value into larger data type
+			Compiler automatically converts without explicitly mention conversion type.
+
+		int count=100;
+		double doubleCount=(double)count;
+	
+		double doubleCount=count;   //OK 
+
+		Explicit
+			We store larger data type value into smaller data type
+			Compiler does not automatically converts , we need explicitly mention conversion type.
+
+		       double doubleNumber=1000.00;
+			int number=(int)doubleNumber;
+
+	Boxing 
+		Conversion from Value type to Reference type 
+		Implicit type conversion
+
+	Un-Boxing 
+		Conversion from reference type to value type 	
+		Explicit type conversion
+
+
+	WHEN ??????????
+
+	When to Use Boxing  ?
+
+	int Id 		string Name   long Contact
+	Customer c1    ======>Id , Name, Contact
+	
+	If we need send data from Front-End to Back-End     =====> Storage(Insert) ---Boxing 
+
+	Id Name Contact    --Html 3 TextBox 
+
+	Customer Object ---store -Id , Name and Contact ---Insert Customer Object to Table Row
+	
+	
+	
+
+	CUSTOMER TABLE
+
+		ID 	NAME	CONTACT-NUMBER
+
+		101     C1		90909090				        1ST ROW(CUSTOME1)
+
+		102	  C2		89898989					2ND ROW(CUSTOMER2)
+
+
+		UN-BOXING    ---Retrieval from Table 
+	Arrays 
+
+		Store group of similar set of elements
+		Index number by which we can get particular array element.
+		Initialized with size before storing value.
+		
+		Single Dimensional Arrays
+		Linear set of elements 
+		
+		DataType[]  arrayName=new DataType[Size];
+
+		int[] numberArray=new int[4];      //Array Declaration + Initialization
+
+		int[] numberArray;				//Declaration
+		numerArray=new int[4];	                //Initialized with size 
+
+		integer array 4 elements
+		size 4
+		
+		index 0   ====> 10
+		index 1  =====> 20	index 2 ==> 30   index 4 ===> 40
+
+		Multi Dimensional Arrays
+				Store data in table format or matrix format 
+				DataType[,]  arrayName=new DataType[RowSize,ColumnSize];
+		
+		Jagged Arrays 
+				Array of Arrays 		
+				Array elements will hold one more array 	
+
+				integer array 4 elements
+				size 4
+		
+				index 0   ====> array1
+				index 1   =====> array2
+				index 2   =====> array3
+			        index 4   ===> array4
+
+				DataType[][] arrayName=new DataType[RowSize][];
+
+				 int[][] numbersJaggedArray = new int[2][];
+					
+			string[]  NameArray=new string[5];
+
+NameArray[0]			Name1
+NameArray[1]			Name2
+NameArray[2]			Name3
+NameArray[3]			Name4
+NameArray[4]
+
+Jagged Array ----> 4
+
+jagged[0]				jaggaed[]		---2
+jagged[1]				jaggaed[]		----3
+jagged[2]				jaggaed[]		---1
+jagged[3]				jaggaed[]		---4
+
+
+	Array Of Objects
+
+		Employee[] EmployeeArray=new Employee[3];	//Emp Array to Store 3 emp object //Declaration + Inotialization
+
+		Employee[] EmployeeArray;				//Array Declaration
+
+		EmployeeArray=new Employee[3];         //Array Initialization
+
+		int[] numbers=new int[4];	
+
+		List of integers 
+				integer array    -4 
+				Each elements of Array will store one integer value
+
+Object Oriented Programming
+
+Inheritance
+	Mechanism by which one class can acquire properties from other class.
+	Is A relationship.
+
+	Base class
+	Class which contains common data members(methods, variables) used by other class
+
+	Derived class
+	Class which uses data members from other class.
+
+	Advantage 
+		Code Reusability
+		No need start coding from scratch
+		Release of new version of software or product (Enhancement)
+
+	Polymorphism
+			
+		An ability an object to take many forms
+		Single entity can take different forms and behave different 
+		
+		Poly	+ 	Morphism
+		Many		Forms
+
+		Compile Time or Static Polymorphism
+			
+				Method Overloading
+				Same method Name , Different Method Signature(No.. Of Parameters  or Type of Parameters)
+
+				SendingMessage(string name, string greet)
+				SendingMessage(string greet)
+
+				Shopping 
+					Payment(Cash)							Payment(Amount)
+					Payment(UPI)
+					Payment(UPI , CreditCard)				Payment(UPIID,89898989)
+			
+			     Customer
+			     CraeteAccount(AdhaarCard,RentalAgreement,HRLetter,EBill )
+			     CreateAccount(VoterId ,PanCard)	
+				
+		Runtime or Dynamic Polymorphism
+	
+				Method Overriding 
+				
+				Same Method Name with Same Parameters
+				One method must defined in Base Class	, Redefined in Derived Class		----> Inheritance 
+				Base Class method defined with virtual keyword and Derived class method must declared with override keyword
+												--------------------------												   -----------------------------
+
+	BankAccountDetails
+	ActNo
+	Branch
+	SavingsAccount				DematAccount		CurrentAccount		SalaryAccount
+		
+		HAS A					HAS A				HAS A					HAS A
+								Customer
+
+Polymorphis
+			
+		An ability an object to take many forms
+		Single entity can take different forms and behave different 
+		
+		Poly	+ 	Morphism
+		Many		Forms
+
+		Compile Time or Static Polymorphism
+			
+				Method Overloading
+				Same method Name , Different Method Signature(No.. Of Parameters  or Type of Parameters)
+
+				SendingMessage(string name, string greet)
+				SendingMessage(string greet)
+
+				Shopping 
+					Payment(Cash)							Payment(Amount)
+					Payment(UPI)
+					Payment(UPI , CreditCard)				Payment(UPIID,89898989)
+			
+			     Customer
+			     CraeteAccount(AdhaarCard,RentalAgreement,HRLetter,EBill )
+			     CreateAccount(VoterId ,PanCard)	
+				
+		Runtime or Dynamic Polymorphism
+	
+				Method Overriding 
+				
+				Same Method Name with Same Parameters
+				One method must defined in Base Class	, Redefined in Derived Class		----> Inheritance 
+				Base Class method defined with virtual keyword and Derived class method must declared with override keyword
+												--------------------------												   -----------------------------
+				virtual function ???
+				Inheritance mandatory 
+				---------------------------------------
+
+				CalculateSalary()		CalculatePF()
+
+				CalculateBill()				
+
+				Virtual Function ???????
+				----------------------------
+				Employee							--BC
+					virtual void CalculateSalary()
+
+				Analyst								--DC
+					override void CalculateSalary()
+
+				SalesPerson						--DC
+					void CalculateSalary()
+
+		Main
+				Analyst anlyst=new Analyst();
+				Employee empObj=new Analyst();
+				CalculateSalary();
+				SalesPerson sale=new SalesPerson();
+				sale.CalculateSalary();
+
+		Employee empObj=new Analyst();
+		empObj.CalculateSalary();
+
+		anlyst.CalculateSalary();
+
+		Employee empObj=new Analyst();
+		empObj=new SalesPerson();
+		empObj.CalculateSalary();
+
+		Base class reference variable Call respective derived class method 
+
+					Id , Name , Card , email , ContactNumber 
+
+					Is A
+			GetDiscount()
+			GetCustomerDetails()
+
+Gold			Platinum 			Silver 					Derived Class
+discountRate  	discountRate		discountRate
+GetDiscount()
+GetCashBack()   GetCashBack()		No CashBack 
+GoldCard		PlatinumCard		SilverCard	
+
+Customer custObj=new Customer();					====> Only Base Class method access
+GetDiscount()
+GetCustomerDetails()
+
+SilverCustomer custObj=new SilverCustomer();					====> Call Base Class method + Derived Class method 
+
+Method Overriding 
+Customer customerObj=new SilverCustomer();       ----> Method Overriding 
+
+Base Class reference variable we can dynamically access derived class method 
+
+		Has A 
+
+					Products
+				gender	,size ,color
+			
+					Is A
+
+Clothes 				Accessories 		Shoes  				
+
+gender				size ,color			size , color
+size
+
+	Method 
+
+Single class create multiple methods to perform different functionalities 
+												====> Method Names must be same ??????
+
+Accomodation Class
+
+	Search(Sharing,Distance,Budget,Food,Ameneties,Transport)
+	Search(Sharing,Distance,Budget,Food,Ameneties,AC,Parking)
+	Search(Sharing,Distance,Budget,Location)
+
+SalaryAccount
+
+	CreateAccount(Name,EmailID,VoterId,PAN Card,Employee_Letter)
+	CreateAccount(Name,EmailID,Aadhar,PAN Card,Gas Bill,E-BIll,ContactNumber)
+	CreateAccount(Name,EmailID,Aadhar,PAN Card,Gas Bill,E-BIll,ContactNumber,ReferenceNumber)
+
+Method Overriding
+	
+		Inheritance 
+
+				Mobile
+
+	SmartPhone 	KeypadPhone 	FlipPhone 
+
+		Employee
+			CalculateSalary()												Basic 	HRA	PF 	
+		HR					Analyst					SalesPerson
+	CalculateSalary()		CalculateSalary()		CalculateSalary()
+
+	base keyword
+	
+		Used to access base class method or constructor from Derived class method or constructor.
+		Abstract class
+		------------------------
+		It is acting as Base Class and created with abstract keyword
+										-------------------	
+		It can't be instantiated.
+`       	Class can access only one abstract class methods. ---> No multiple inheritance
+
+		AC1					AC2
+
+		DC1 ----> AC1,AC2     ============> Error 	---- A class can access only one base class methods 
+		It can't be sealed , can't be marked as static
+		-------------------------------------------------------------------------
+		Why ???
+		Multiple inheritance not supported in C#
+				
+		Methods:
+		a. Abstract methods
+		 		Only method declaration.
+				Derived class provide its own implementation for abstract method.	
+				abstract void Show();	//Method Declaration , No implementation
+
+		b. virtual methods	
+			Provide default implementation for methods , which can be used by derived class.
+					--------------------------------------------------------------
+			virtual GetCustomerName()
+			{
+					return FristName + " " + middlename + "  " + LastName;
+			}
+
+				abstract	Customer				abstract 	Shop
+		
+			GoldCustomer			PlatinumCustomer 			SilverCustomer	
+		
+			 
+
+				BC1				BC2
+
+						DC
+		When to Use?
+
+		Create library file with default method implementations.
+
+		Interface
+		=======
+		interface created with interface keyword
+		It can't be instantiated.
+		It's a contract which enforces a class to have certain data members.
+			  ---------------------------------------------------
+		Supports feature similar to multiple inheritance , Class can access 2 or more Interfaces methods
+		No variables.
+
+				ECommerce
+				
+			Customer							Vendor							Product			Admin				Shop
+
+			abstract							abstract						Product								IShop
+			Customer 							Vendor
+			GetCustomer()						GetProducts()					GetDiscountRate(){ 5% }				GetDiscountRate(){ 5% }
+			GetDiscountRate(){ 5% }												GetCashBack() {100}				GetCashBack() {100}
+
+			SilverCustomer:IShop
+
+					====> both GetDiscountRate + cashBack
+
+															
+			SilverCustomer : Customer,IDiscount                          
+
+			GoldCustomer : Customer,IDiscount,ICashBack                            
+
+			Solution
+
+			Customer 					IVendor(interface)			
+
+			GoldCustomer : Customer,IVendor				====> Possible   
+
+									IShop
+									GetDiscountRate();				-----abstract 
+									GetCashBack();					---- abstract  
+
+		GoldCustomer : Customer,IShop
+
+		SilverCustomer : Customer,IShop
+
+		GoldCustomer eligible for Discount and CashBack
+		SilverCustomer eligible for only Discount ,  no cashBack
+
+								ICashBack						IDiscount					====> Multiple inheritance
+								GetCashBack();					GetDiscountRate();
+
+		GoldCustomer : Customer,IDiscount,ICashBack
+
+		SilverCustomer : Customer,IDiscount
+
+
+		
+		Interface can't be instantiated.
+		
+		It's a contract which enforces a class to have certain data members.
+		-----------------------------------------------------------------------------------------------------------------
+		
+		Methods
+			
+		Only abstract methods.
+		By default its methods are public and abstract.
+
+			
+			Interface and Abstract Class
+
+		Employee		====> Abstract 
+		Abstract methods
+		abstract public void Print();
+		Derived class provide its own implementation for abstract method.	
+
+		Virtual methods
+		Method with implementation			=====> Default implementation 
+		
+		When ??????????????????????????????
+
+		
+		Print()
+
+		Method declaration
+		abstract public void Print();
+
+		Method Definition
+		public void Print()
+		{
+			
+		}
+
+		Method Implementation
+		public void Print()		
+		{
+			cw("Employee Report");
+
+		}
+		
+
+			AC					    AC
+		Employee				Person
+
+				HR		====> Employee
+				HR          ====> Person
+
+		IShop
+		GetDiscount();
+		GetCashBack();
+
+		Class can access multiple interface methods 
+		ICashBack			IDiscount
+		GetCashBack();		GetDiscount();
+	
+			Business rule 
+					GC		====> eligible for CashBack and Discount
+					SC		====> eligible only for Discount 
+			
+			GoldCustomer :IDsicount,ICashBack
+			SilverCustomer :IDiscount
+
+			virtual methods			v/s           abstract methods
+
+			Method with implementation or default implementation
+			Method with only declaration 
+
+			virtual method may or not may not be implmented in respective class where it is used	
+			virtual method implementation can be overriden in derived class where it is used.	
+			abstract method must be implemented in respective class where it is used
+
+
+		A class can use both Abstract Class and interface methods
+
+		Customer(abstract class)				IDiscount(interface) 			ICashBack  (interface)
+			
+		GoldCustomer :Customer ,IDiscount,ICashBack
+		GoldCustomer:IDiscount,ICashBack,Customer					//WRONG 
+		SilverCustomer :Customer ,IDiscount
+
+
+		IReport
+
+		GenerateReport();
+
+		Analyst
+				GenerateReport()
+				HRA +  ClientAllowane
+
+		SalesPerson
+			OrderCount  + Incentive     .............................
+
+
+
+C # 
+
+Object Oriented Programming Language
+Case Sensitive
+
+Namespaces			==============> Libaray file ..Header Files... Packages 
+
+It is grouping of related classes , methods and its interfaces into one unit(library file)
+
+I/O or  DB funtionalites or String or Collections 
+
+No global variables supported .
+
+using NameSpaceName;
+
+Create own namespace
+--------------------------------------
+namespace NameSpaceName
+{
+
+	class Employee
+	{
+		//Variables Declaration .....EmpName , EmpID , Salary, Role....
+		//AddEmployee()  ...UpdateEmployee() SearchEmployee()
+	}
+
+}
+
+
+How Create Object and Call methods
+===============================
+ClassName objectName=new ClassName();				====> Create Object
+
+objectName.MethodName();							====> Call instance method 
+
+ClassName.MethodName();								====> Static methods
+
+
+Naming Convention or Coding standard
+=================================
+
+	Class
+		PascalCase 
+		Employee		EmployeeDetails
+	Variables
+		class variables
+		PascalCase		EmployeeName		EmpId
+		local variable
+		camelCase		count				empCount
+	Methods
+		PascalCase
+		GetEmployeeDetails()		UpdateEmployeeDetails()
+	Method parameters
+		AddEmployee(int id,string empName)		camelCase
+	Interface
+		ICalculateDiscount
+
