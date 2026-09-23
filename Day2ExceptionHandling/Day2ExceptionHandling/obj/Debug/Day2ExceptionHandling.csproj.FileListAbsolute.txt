@@ -1,7 +1,0 @@
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\bin\Debug\Day2ExceptionHandling.exe.config
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\bin\Debug\Day2ExceptionHandling.exe
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\bin\Debug\Day2ExceptionHandling.pdb
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\obj\Debug\Day2ExceptionHandling.csproj.AssemblyReference.cache
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\obj\Debug\Day2ExceptionHandling.csproj.CoreCompileInputs.cache
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\obj\Debug\Day2ExceptionHandling.exe
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Day2ExceptionHandling\Day2ExceptionHandling\obj\Debug\Day2ExceptionHandling.pdb

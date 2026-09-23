@@ -1,0 +1,5 @@
+[CUSTOM LOG - 2026-09-22 10:39:51] Unhandled exception in the application.
+Exception: Example exception.
+StackTrace:    at LoggingError.Program.RunApplication() in C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\LoggingError\LoggingError\Program.cs:line 32
+   at LoggingError.Program.Main(String[] args) in C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\LoggingError\LoggingError\Program.cs:line 16
+========================================

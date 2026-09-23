@@ -1,7 +1,0 @@
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\bin\Debug\Example.Day1.exe.config
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\bin\Debug\Example.Day1.exe
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\bin\Debug\Example.Day1.pdb
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\obj\Debug\Example.Day1.csproj.AssemblyReference.cache
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\obj\Debug\Example.Day1.csproj.CoreCompileInputs.cache
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\obj\Debug\Example.Day1.exe
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\Example.Day1\Example.Day1\obj\Debug\Example.Day1.pdb

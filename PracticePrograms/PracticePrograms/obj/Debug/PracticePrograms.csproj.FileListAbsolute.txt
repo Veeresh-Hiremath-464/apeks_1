@@ -1,7 +1,0 @@
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\bin\Debug\PracticePrograms.exe.config
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\bin\Debug\PracticePrograms.exe
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\bin\Debug\PracticePrograms.pdb
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\obj\Debug\PracticePrograms.csproj.AssemblyReference.cache
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\obj\Debug\PracticePrograms.csproj.CoreCompileInputs.cache
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\obj\Debug\PracticePrograms.exe
-C:\Users\abannigidad\OneDrive - Deloitte (O365D)\Documents\DTA Engineering_Bootcamp\C#\PracticePrograms\PracticePrograms\obj\Debug\PracticePrograms.pdb

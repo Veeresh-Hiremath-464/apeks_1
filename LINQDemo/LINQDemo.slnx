@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LINQDemo/LINQDemo.csproj" Id="3838648b-63a3-453c-b2cc-0caba7056806" />
+  <Project Path="TestLINQ.Project/TestLINQ.Project.csproj" />
+</Solution>
